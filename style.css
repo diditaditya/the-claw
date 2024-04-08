@@ -1,0 +1,245 @@
+.scene {
+    margin: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+.claw-machine {
+    width: 100%;
+    height: 100%;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    /* transition: transform 1s; */
+    /* transform: rotate3d(0, 1, 0, 40deg); */
+}
+
+.glb {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-100px);
+}
+
+.glb-face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    color: white;
+    border: 2px black solid;
+}
+
+.glb-front {
+    transform: rotateY(0deg) translateZ(100px);
+}
+
+.glb-back {
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.glb-right {
+    transform: rotateY( 90deg) translateZ(100px);
+}
+
+.glb-left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.glb-top {
+    transform: rotateX( 90deg) translateZ(100px);
+}
+
+
+
+.gantry {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.x-frame {
+    margin-left: 20px;
+    width: 10px;
+    height: 100%;
+    background-color: green;
+}
+
+.y-frame {
+    margin-top: -20px;
+    width: 100%;
+    height: 20px;
+    background-color: blue;
+}
+
+.sling {
+    width: 4px;
+    height: 50px;
+    background-color: red;
+    transform: translateX(20px) translateZ(80px);
+}
+
+.claw {
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateX(12px) translateZ(80px);
+}
+
+.claw-ball {
+    display: block;
+    background: black;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background: radial-gradient(circle at 10px 10px, gray, black);
+    
+}
+
+.claw-arm {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 10px 0px 0px 0px black; 
+}
+
+.claw-arm-1 {
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    left: -2.5px;
+}
+
+.claw-arm-2 {
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    left: -5px;
+    transform: rotateY(180deg);
+}
+
+
+
+.lwb {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-100px);
+}
+
+.lwb-face {
+    position: absolute;
+    border: 2px black solid;
+    background-color: rgba(128, 128, 128, 1);
+}
+
+.lwb-front, .lwb-back, .lwb-right, .lwb-left {
+    width: 200px;
+    height: 300px;
+    line-height: 300px;
+}
+
+.lwb-top, .lwb-bottom {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+}
+
+.lwb-front {
+    transform: rotateY(0deg) translateZ(100px);
+}
+
+.lwb-back {
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.lwb-right {
+    transform: rotateY( 90deg) translateZ(100px);
+}
+
+.lwb-left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.lwb-bottom {
+    transform: rotateX(-90deg) translateZ(200px);
+}
+
+.lwb-top {
+    transform: rotateX( 90deg) translateZ(100px);
+}
+
+
+
+.lwb-front-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.interface {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.coiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.coin-indicator {
+    height: 7px;
+    width: 7px;
+    margin-top: -10px;
+    margin-bottom: 2px;
+    margin-left: 1.5px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.coin-insert {
+    height: 20px;
+    width: 10px;
+    padding-bottom: -5px;
+    background-color: white;
+    border: 1px solid black;
+    line-height: 20px;
+    text-align: center;
+    color: black;
+}
+
+.coin-insert:hover {
+    cursor: pointer;
+}
+
+.button {
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.prize-out {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    transform: translate(-50%, -50%);
+    background-color: beige;
+    border: 1px black solid;
+}
